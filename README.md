@@ -4,9 +4,9 @@
 ## 依赖
 1. [AssFontSubset](https://github.com/youlun/AssFontSubset)
 2. [MKVToolNix](https://mkvtoolnix.download/doc/mkvmerge.html)
-环境变量请在.bat中修改 
 
-感谢中津静流提供.bat思路
+环境变量请在.bat中修改 
+感谢**中津静流**提供.bat思路
 
 ## 文件结构
 <pre>
