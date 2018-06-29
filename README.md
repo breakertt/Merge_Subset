@@ -14,13 +14,21 @@
 |-[LoliHouse] Remux Subset.py
 |-[LoliHouse] Remux Subset.bat
 |-encoded.mkv
+|-encoded.sc.ass__(Optional)__
+|-encoded.tc.ass__(Optional)__
+|-encoded.jpn.ass__(Optional)__
 |--output
-|---encoded.mkv__(After)__
-|---encoded.sc.ass__(Optional)__
-|---encoded.tc.ass__(Optional)__
-|---encoded.jpn.ass__(Optional)__
+|---encoded.mkv__(After MKVMerge)__
+|---encoded.sc.ass__(Optional)__(After AFS)__
+|---encoded.tc.ass__(Optional)__(After AFS)__
+|---encoded.jpn.ass__(Optional)__(After AFS)__
+|---1.1HPD2Q59.ttf__(Random)__(After AFS)__
+|---2.1HPD2Q59.otf__(Random)__(After AFS)__
+|---3. ...
 |--fonts
-|--output
+|---DFYanKai-W7-WIN-BF.ttf
+|---FZZhunYuan-M02.TTF
+|---.....
 </pre>
 
 ## 使用方法
