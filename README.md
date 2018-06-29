@@ -1,8 +1,8 @@
 # Lolihouse_Merge_Subset
-识别字幕种类并用[AssFontSubset]https://github.com/youlun/AssFontSubset)生成字体子集并进行封装
+识别字幕种类并用[AssFontSubset](https://github.com/youlun/AssFontSubset)生成字体子集并进行封装
 
 ## 依赖
-1. [AssFontSubset]https://github.com/youlun/AssFontSubset)
+1. [AssFontSubset](https://github.com/youlun/AssFontSubset)
 2. [MKVToolNix](https://mkvtoolnix.download/doc/mkvmerge.html)
 环境变量请在.bat中修改 感谢中津静流提供.bat思路
 
