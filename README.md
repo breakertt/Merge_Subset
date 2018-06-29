@@ -34,4 +34,4 @@
 ## 使用方法
 1. 按照上述文件结构准备好文件
 2. 将encoded.mkv拖到[LoliHouse] Remux Subset.bat上
-3. 程序会自动生成带有精简字体集以及字幕的mkv文件
+3. 程序会自动生成带有精简字体集以及字幕的mkv文件(均在output文件夹)
