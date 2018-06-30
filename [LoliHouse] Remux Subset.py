@@ -41,7 +41,10 @@ lang_dict = {"sc":"简体", "tc":"繁体", "jpn":"日语"}
 sub_default_cmd = " --default-track 0:yes"
 for lang in lang_dict:
     if lang in sub_dict:
-        sub_command  += "--language 0:chi%s --track-name \"0:%s\" \"output/%s\" " %(sub_default_cmd,lang_dict[lang],sub_dict[lang])
+        if lang == "jpn":
+            sub_command  += "--language 0:jpn%s --track-name \"0:%s\" \"output/%s\" " %(sub_default_cmd,lang_dict[lang],sub_dict[lang])
+        else:
+            sub_command  += "--language 0:chi%s --track-name \"0:%s\" \"output/%s\" " %(sub_default_cmd,lang_dict[lang],sub_dict[lang])
         sub_default_cmd = ""
 
 #Find Fonts and create command
@@ -50,14 +53,17 @@ for fontfile in os.listdir(".\\output"):
     if (os.path.splitext(fontfile)[1].lower() == ".otf") or (os.path.splitext(fontfile)[1].lower() == ".ttf"):
         font_command += " --attach-file \"output\\%s\"" % fontfile
 
+if not os.path.exists("output_mkv"):
+    os.mkdir("output_mkv")
 
 inti_command = "%s " % mkvmerge
-inti_command += "--output \"output\\%s.mkv\" --no-subtitles --no-attachments " % file
+inti_command += "--output \"output_mkv\\%s.mkv\" --no-subtitles --no-attachments " % file
 inti_command += "--language 0:und --default-track 0:yes --language 1:jpn --default-track 1:yes \"%s.mkv\" " % file
+
 
 
 #Combine Command
 command = inti_command + sub_command + font_command
-time.sleep(1)
+time.sleep(1) #我想睡一会儿QAQ
 os.system(command)
 print(command)

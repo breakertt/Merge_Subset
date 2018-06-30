@@ -17,8 +17,9 @@
 |-encoded.sc.ass__(Optional)__
 |-encoded.tc.ass__(Optional)__
 |-encoded.jpn.ass__(Optional)__
-|--output
+|--output_mkv
 |---encoded.mkv__(After MKVMerge)__
+|--output
 |---encoded.sc.ass__(Optional)__(After AFS)__
 |---encoded.tc.ass__(Optional)__(After AFS)__
 |---encoded.jpn.ass__(Optional)__(After AFS)__
