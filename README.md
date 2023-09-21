@@ -1,4 +1,4 @@
-# Lolihouse_Merge_Subset
+# Merge_Subset
 识别字幕种类并用[AssFontSubset](https://github.com/youlun/AssFontSubset)生成字体子集并进行封装
 
 ## 依赖
